@@ -1,0 +1,18 @@
+WHILE TRUE
+	CALL ReadSalary()
+	IF Salary > 50
+		THEN
+			IF Salary > 70
+				THEN
+					IF Salary >= 90
+						THEN
+							Role <- 'Project Manager'
+						ELSE
+							Role <- 'Consultant'
+					ENDIF
+				ELSE
+					Role <- 'Lead Developer'
+			ENDIF
+		ELSE
+			Role <- 'Manager'
+	ENDIF
